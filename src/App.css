@@ -7,7 +7,6 @@ html {
 }
 
 body {
-  /* min-height: 100vh; */
   height: 100%;
   margin: 0;
   padding: 0;
@@ -17,7 +16,10 @@ body {
 
 main {
   min-height: 100vh;
-  /* padding-top: 60px; */
+}
+
+main.with-nav {
+  padding-top: 60px;
 }
 
 .radial-bg {
@@ -936,7 +938,14 @@ main {
 } */
 
 
-body.with-nav .left-panel {
+/* body.with-nav .left-panel {
+  top: 60px;
+  bottom: 0px;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+nav.with-nav .left-panel {
   top: 60px;
   bottom: 0px;
   height: auto;

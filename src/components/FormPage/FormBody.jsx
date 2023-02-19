@@ -10,9 +10,6 @@ const FormBody = () => {
   const [userEmail, setUserEmail] = useState('')
   const [userCource, setUserCource] = useState('')
 
-
-
-
   const onSubmitForm = (e) => {
     e.preventDefault();
     const formData = {

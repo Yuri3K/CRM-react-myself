@@ -2,6 +2,7 @@ import './NavBar.css'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
+
   return (
     <nav className="project-nav">
       <div className="project-nav__links-wrapper">

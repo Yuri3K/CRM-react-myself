@@ -1,6 +1,19 @@
+import { useContext, useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
+import { AppContext } from '../../App'
+
 const MainPage = () => {
+
+  const location = useLocation()
+  console.log("location", location)
+  const { changeMainClass } = useContext(AppContext)
+
+  useEffect(() => {
+    changeMainClass(location.pathname)
+  }, [])
+
   return (
-    <div className="main-page-caontainer body--dashboard">
+    <>
       <div className="left-panel blue-skin">
         <div className="left-panel__logo">
           <div className="left-panel__logo-title">CRM заявки</div>
@@ -111,7 +124,7 @@ const MainPage = () => {
           </table>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
