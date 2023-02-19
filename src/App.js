@@ -37,7 +37,7 @@ function App() {
       fetch(serverPath + 'cources')
         .then(response => response.json())
         .then(data => {
-          setBids(data)
+          setCources(data)
           setIsLoading(false)
         })
         .catch(error => console.log(error))
@@ -52,7 +52,7 @@ function App() {
       fetch(serverPath + 'bids')
         .then(response => response.json())
         .then(data => {
-          setCources(data)
+          setBids(data)
           setIsLoading(false)
         })
         .catch(error => console.log(error))

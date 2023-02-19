@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../../App";
 
-const SelectProduct = ({ onChange }) => {
+const SelectProduct = ({ onChange, value }) => {
 
   const { cources } = useContext(AppContext)
 
@@ -15,7 +15,7 @@ const SelectProduct = ({ onChange }) => {
   return (
     <div className="form-group">
       <label htmlFor="exampleFormControlSelect1">Продукт:</label>
-      <select onChange={onChange} data-id="product" name="product" className="form-control" id="exampleFormControlSelect1">
+      <select onChange={onChange} data-id="product" name="product" className="form-control" id="exampleFormControlSelect1" value={value}>
         {selectOptions}
       </select>
     </div>

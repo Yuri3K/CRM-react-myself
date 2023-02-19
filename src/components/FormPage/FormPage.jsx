@@ -7,7 +7,6 @@ import './FormPage.css';
 
 const FormPage = () => {
   const location = useLocation()
-  console.log("location", location)
   const { changeMainClass } = useContext(AppContext)
 
   useEffect(() => {
