@@ -1,0 +1,1 @@
+export const serverPath = 'https://lively-swift-flavor.glitch.me/'
